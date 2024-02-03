@@ -1,0 +1,129 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+
+% Títulos automáticos en Ingles
+\usepackage[english]{babel}
+
+% Soporte para buenas urls e hipervínculos entre secciones
+\usepackage{hyperref}
+
+% Citas y referencias en formato APA
+% Si quiere las citas y referencias en IEEE comente esta línea
+\usepackage{apacite}
+
+% Imágenes y figuras
+\usepackage{graphicx}
+
+% Código fuente con números de línea
+\usepackage{listings}
+% Puede cambiar el lenguaje de código fuente
+% https://www.overleaf.com/learn/latex/code_listing#Supported_languages
+\lstset{
+    language=C,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+
+
+\def \unidad{Universidad Tecnológica de Tijuana }
+\def \programa{Ingeniería En Desarrollo Y Gestión De Software }
+\def \curso{Aplicaciones Web Progresivas}
+\def \titulo{Pwa Concepts and Features }
+
+\def \autores{
+    Mercado Juarez Angel Hayr\\
+    0319124541@ut-tijuana.edu.mx \\
+    0319124541\\
+    
+    \vspace{0.5cm}
+    
+    Teacher \\
+    Dr. Ray Brunett Parra\\
+}
+\def \fecha{10 January 2024}
+\def \lugar{
+    Tijuana B.C, 
+   México
+}
+
+% Inicia el documento 
+\begin{document}
+
+% Inserta la portada del documento
+\input{portada}
+
+\tableofcontents
+
+\chapter{Pwa Concepts and Features}\label{PWA Concepts And Features}
+\section{Introduction}\label{intro}
+Progressive web apps (PWAs) are a new type of web application that combines the best of both web and native apps. They are built using web technologies, such as HTML, CSS, and JavaScript, but they can be installed on a user's device and accessed offline. PWAs offer a number of advantages over traditional web apps, including: 
+\begin{itemize}
+    \item Improved performance and reliability
+    \item Increased engagement and retention
+    \item Reduced development and maintenance costs
+\end{itemize}
+\section{Service-Oriented Web Applications }\label{ServiciosWeb}
+
+Service-oriented web applications (SOAs) are web applications that are built using a service-oriented architecture. This means that they are composed of a collection of discrete services that can be independently developed, deployed, and managed. SOAs offer a number of advantages over traditional monolithic web applications, including .\cite{google23}
+\begin{itemize}
+    \item Increased flexibility and scalability
+    \item Reduced complexity and maintenance costs
+    \item Improved performance and reliability
+\end{itemize}
+
+\section{Native Apps }\label{App Nativas}
+
+Native apps are applications that are specifically designed for a particular operating system, such as iOS or Android. They are typically written in a native programming language, such as Objective-C or Java. Native apps offer a number of advantages over web apps, including: \cite{google23}
+
+\begin{itemize}
+    \item Improved performance and reliability
+    \item Increased user engagement and retention
+    \item Access to native device features
+\end{itemize}
+
+\section{Multiplatform Apps}\label{App Multiplatform}
+
+Multiplatform apps are applications that can be run on multiple operating systems, such as iOS, Android, and Windows. They are typically written using a cross-platform development framework, such as React Native or Xamarin. Multiplatform apps offer a number of advantages over native apps, including: \cite{mozilla23}
+
+\begin{itemize}
+    \item Reduced development and maintenance costs
+    \item Increased reach to a wider audience
+\end{itemize}
+
+\section{PWAs}\label{PWAs}
+PWAs are a type of web application that combines the best of both SOAs and native apps. They are built using web technologies, but they can be installed on a user's device and accessed offline. PWAs offer a number of advantages over traditional web apps, SOAs, and native apps, including: 
+
+\begin{itemize}
+    \item Improved performance and reliability
+    \item Increased engagement and retention
+    \item Reduced development and maintenance costs
+    \item Access to native device features
+\end{itemize}
+
+\section{PWAs Features}\label{PWAsFeatures}
+PWAs are characterized by a number of features that distinguish them from traditional web apps. These features include:
+
+\begin{itemize}
+    \item Progressive - PWAs are progressively enhanced, meaning that they can be used even on devices with limited connectivity or resources.
+    \item App-like - PWAs can be installed on a user's device and accessed from the home screen, just like a native app.
+    \item Offline support - PWAs can be used offline, even if the user does not have an internet connection.
+\end{itemize}
+
+\section{Conclusion}\label{Conclusion}
+PWAs offer a number of advantages over traditional web apps, SOAs, and native apps. They are a promising new technology that has the potential to revolutionize the way we interact with web applications.
+
+
+% Estilo de bibliografía APA
+% Si quiere usar el estilo IEEE comente esta línea
+\bibliographystyle{apacite}
+
+% Descomente esta línea para usar el estilo de bibliografía IEEE
+%\bibliographystyle{ieeetr}
+\bibliography{referencias}
+
+\end{document}

@@ -1,0 +1,137 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+
+% Títulos automáticos en Ingles
+\usepackage[english]{babel}
+
+% Soporte para buenas urls e hipervínculos entre secciones
+\usepackage{hyperref}
+
+% Citas y referencias en formato APA
+% Si quiere las citas y referencias en IEEE comente esta línea
+\usepackage{apacite}
+
+% Imágenes y figuras
+\usepackage{graphicx}
+
+% Código fuente con números de línea
+\usepackage{listings}
+% Puede cambiar el lenguaje de código fuente
+% https://www.overleaf.com/learn/latex/code_listing#Supported_languages
+\lstset{
+    language=C,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+
+
+\def \unidad{Universidad Tecnológica de Tijuana }
+\def \programa{Ingeniería En Desarrollo Y Gestión De Software }
+\def \curso{Aplicaciones Web Progresivas}
+\def \titulo{Tools and Developments of PWAs}
+
+\def \autores{
+    Mercado Juarez Angel Hayr\\
+    0319124541@ut-tijuana.edu.mx \\
+    0319124541\\
+    
+    \vspace{0.5cm}
+    
+    Teacher \\
+    Dr. Ray Brunett Parra\\
+}
+\def \fecha{10 January 2024}
+\def \lugar{
+    Tijuana B.C, 
+   México
+}
+
+% Inicia el documento 
+\begin{document}
+
+% Inserta la portada del documento
+\input{portada}
+
+\tableofcontents
+
+\chapter{Tools and Developments of PWAs}\label{Tools and Developments of PWAs}
+\section{Introduction}\label{intro}
+PWAs are a relatively new technology, but they are quickly gaining popularity. They offer a number of advantages over traditional web apps, including: 
+\begin{itemize}
+    \item Offline support: PWAs can be used even when the user is not connected to the internet.
+    \item Push notifications: PWAs can send push notifications to the user, even when the app is not in use.
+    \item Native app-like experiences: PWAs can be launched from the user's home screen and can be used with system-level features, such as notifications and permissions.
+\end{itemize}
+\section{Requirements}\label{Requirements}
+
+To create a PWA, developers must first ensure that their web application meets the following requirements .\cite{mdn23}
+\begin{itemize}
+    \item The application must be built using web technologies, such as HTML, CSS, and JavaScript.
+    \item The application must be responsive and should work well on a variety of devices and screen sizes.
+    \item The application must be progressive, meaning that it should provide a good user experience even if it is not installed on the user's device.
+\end{itemize}
+
+\section{Browsers}\label{Browsers}
+
+PWAs are supported by most modern browsers, including: 
+
+\begin{itemize}
+    \item Chrome
+    \item Firefox
+    \item Edge
+    \item Safari
+\end{itemize}
+In addition to these browsers, there are also a number of third-party PWA browsers available, such as: 
+
+\begin{itemize}
+    \item PWABuilder
+    \item PWAify
+    \item PWA Launcher
+\end{itemize}
+
+\section{Development tools}\label{Development tools}
+
+There are a number of development tools available to help developers create PWAs. These tools can help developers to: \cite{w3c23}
+
+\begin{itemize}
+    \item Create a PWA-compatible web application
+    \item Test and debug a PWA
+    \item Deploy a PWA to the web
+\end{itemize}
+
+Some popular PWA development tools include: 
+\begin{itemize}
+    \item Create React App
+    \item Angular CLI
+    \item Ionic Framework
+\end{itemize}
+
+\section{Benefits of using PWAs}\label{Benefits of using PWAs}
+PWAs offer a number of benefits over traditional web apps, including: \cite{google23}
+
+\begin{itemize}
+    \item Better user experience: PWAs can provide a better user experience than traditional web apps, thanks to features such as offline support and push notifications
+    \item Increased engagement: PWAs can help to increase user engagement, thanks to features such as push notifications and native app-like experiences
+    \item Improved search engine optimization (SEO): PWAs can improve a web application's SEO, thanks to features such as service workers and app manifests
+\end{itemize}
+
+
+
+\section{Conclusion}\label{Conclusion}
+PWAs are a powerful new technology that can offer a number of advantages over traditional web apps. They are a good choice for web applications that need to provide a good user experience, increase engagement, or improve SEO.
+
+
+% Estilo de bibliografía APA
+% Si quiere usar el estilo IEEE comente esta línea
+\bibliographystyle{apacite}
+
+% Descomente esta línea para usar el estilo de bibliografía IEEE
+%\bibliographystyle{ieeetr}
+\bibliography{referencias}
+
+\end{document}
